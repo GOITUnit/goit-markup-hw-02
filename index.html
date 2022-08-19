@@ -1,110 +1,188 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The best WebStudio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best WebStudio" />
     <title class="title">WebStudio</title>
     <!--Custom styles-->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-       <nav class="nav">
-        <a class="nav-link-active" href="./index.html">WebStudio</a>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="">Студія</a></li>
-                <li class="nav-item"><a href="">Портфоліо</a></li>
-                <li class="nav-item"><a href="">Контакти</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <!-- nav-link-active  => nav-logo -->
+        <a class="nav-logo" href="./index.html"><span class="nav-logo-web">Web</span><span class="nav-logo-studio">Studio</span></a>
+        <ul class="nav-list">
+            <!-- активный линк как в макете -->
+          <li class="nav-item-active">
+            <a class="nav-link" href="#">Студія</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Портфоліо</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакти</a>
+        </li>
+        </ul>
+      </nav>
 
-<ul class="list-1">
-    <li>
-        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li>
-        <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-    </li>
-</ul>
-
+      <ul class="contacts-list-top">
+        <li class="contacts-list_item">
+        <a class="contacts-list_item-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+        </a>
+        </li>
+        <li class="contacts-list_item">
+          <a class="contacts-list_item-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
     <main>
-<!--Замовлення послуг-->
-        <section>
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button" type="button">Замовити послугу</button>
-        </section>
-<!--Особливості-->
-<section >
-    <h2 class="About">Наші особливості</h2>
-    <ul class="about-list">
-    <li class="about-item">
-        <h3>Увага до деталей</h3>
-        <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-      </li>
-      <li class="about-item">
-        <h3>Пунктуальність</h3>
-        <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-      </li>
-      <li class="about-item">
-        <h3>Планування</h3>
-        <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-      </li>
-      <li class="about-item">
-        <h3>Сучасні технології</h3>
-        <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-      </li>
-    </ul>
-</section>
-<!--Надання послуг-->
-<section class="gallery">
-    <h2>Чим ми займаємося</h2>
-<ul class="gallery-list">
-    <li class="gallery-item"><img src="./imgwork/img-1.jpg" alt="Розробка продукту" width="370" height="294"></li>
-    <li class="gallery-item"><img src="./imgwork/img-2.jpg" alt="Розробка Інтерфейсу" width="370" height="294"></li>
-    <li class="gallery-item"><img src="./imgwork/img-3.jpg" alt="Стилизація" width="370" height="294"></li>
-</ul>
-</section>
-<!--Співробітники-->
-<section>
-    <h2>Чим ми займаємося</h2>
-    <ul>
-        <li>
-            <img src="./ourteam/img-1.jpg" alt="Співробітник" width="270" height="368">
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
-        </li>
-        <li>
-            <img src="./ourteam/img-2.jpg" alt="Співробітник" width="270" height="368">
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
-        </li>
-        <li>
-            <img src="./ourteam/img-3.jpg" alt="Співробітник" width="270" height="368">
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
-        </li>
-        <li>
-            <img src="./ourteam/img-4.jpg" alt="Співробітник" width="270" height="368">
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
-        </li>
-    </ul>
-</section>
-<!--Контактні данні-->
-<section>
-    <h2>Контакти</h2>
-    <a href="./index.html">WebStudio</a>
-    <address>
-        <ul>
-            <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <!--Замовлення послуг-->
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <a class="hero-link" href="#">Замовити послугу</button>
+      </section>
+      <!--Особливості-->
+      <section class="about">
+        <h2 class="about-title">Наші особливості</h2>
+        <ul class="about-list">
+          <li class="about-list_item">
+            <h3 class="about-list_item-title">Увага до деталей</h3>
+            <p class="about-list_item-paragraph">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="about-list_item">
+            <h3 class="about-list_item-title">Пунктуальність</h3>
+            <p class="about-list_item-paragraph">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="about-list_item">
+            <h3 class="about-list_item-title">Планування</h3>
+            <p class="about-list_item-paragraph">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="about-list_item">
+            <h3 class="about-list_item-title">Сучасні технології</h3>
+            <p class="about-list_item-paragraph">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
         </ul>
-    </address>
-</section>
+      </section>
+      <!--Надання послуг-->
+      <section class="gallery">
+        <h2 class="gallery-title">Чим ми займаємося</h2>
+        <ul class="gallery-list">
+          <li class="gallery-list_item">
+            <img
+              src="./imgwork/img-1.jpg"
+              alt="Розробка продукту"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li class="gallery-list_item">
+            <img
+              src="./imgwork/img-2.jpg"
+              alt="Розробка Інтерфейсу"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li class="gallery-list_item">
+            <img
+              src="./imgwork/img-3.jpg"
+              alt="Стилизація"
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
+      <!--Співробітники-->
+      <section class="workers">
+        <h2 class="workers-title">Чим ми займаємося</h2>
+        <ul class="workers-list">
+          <li class="workers-list_item">
+            <img
+              src="./ourteam/img-1.jpg"
+              alt="Співробітник"
+              width="270"
+              height="368"
+            />
+            <h3 class="workers-list_item-title">Ігор Дем'яненко</h3>
+            <p class="workers-list_item-paragraph">Product Designer</p>
+          </li>
+          <li class="workers-list_item">
+            <img
+              src="./ourteam/img-2.jpg"
+              alt="Співробітник"
+              width="270"
+              height="368"
+            />
+            <h3 class="workers-list_item-title">Ольга Рєпіна</h3>
+            <p class="workers-list_item-paragraph">Frontend Developer</p>
+          </li>
+          <li class="workers-list_item">
+            <img
+              src="./ourteam/img-3.jpg"
+              alt="Співробітник"
+              width="270"
+              height="368"
+            />
+            <h3 class="workers-list_item-title">Микола Тарасов</h3>
+            <p class="workers-list_item-paragraph">Marketing</p>
+          </li>
+          <li class="workers-list_item">
+            <img
+              src="./ourteam/img-4.jpg"
+              alt="Співробітник"
+              width="270"
+              height="368"
+            />
+            <h3 class="workers-list_item-title">Михайло Єрмаков</h3>
+            <p class="workers-list_item-paragraph">UI Designer</p>
+          </li>
+        </ul>
+      </section>
+      <!--Контактні данні-->
+      
+      <footer class="contacts-footer">
+        
+        <a class="contacts-footer-logo" href="./index.html">
+            WebStudio
+        </a>
+        <address>
+          <ul class="contacts-list-bottom">
+            <li class="contacts-list_item">
+              <a
+                class="contacts-list-bottom"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >
+                    м. Київ, пр-т Лесі Українки, 26
+                </a
+              >
+            </li>
+            <li class="contacts-list_item">
+                <a class="contacts-list_item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contacts-list_item">
+                <a class="contacts-list_item-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
