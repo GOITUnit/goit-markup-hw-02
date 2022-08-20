@@ -11,11 +11,17 @@
   <body>
     <header>
       <nav class="nav">
-        <a class="nav-logo" href="./index.html">WebStudio</a>
+        <a class="nav-logo" href="./index.html"><span class="nav-logo-web">Web</span><span class="nav-logo-studio">Studio</span></a></a>
         <ul class="nav-list">
-          <li class="nav-item-active"><a href="">Студія</a></li>
-          <li class="nav-item"><a href="">Портфоліо</a></li>
-          <li class="nav-item"><a href="">Контакти</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Студія</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Портфоліо</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакти</a>
+        </li>
         </ul>
       </nav>
 
@@ -36,7 +42,7 @@
     <main>
       <!--Портфоліо-->
       <section class="portfolio">
-        <h2 class="portfolio-title">Портфоліо</h2>
+        <h2 hidden class="portfolio-title">Портфоліо</h2>
         <ul class="portfolio-list">
           <li class="portfolio-list_item">
             <a class="portfolio-list_item" href="">Усі</a>
@@ -154,28 +160,30 @@
       <footer class="contacts-footer">
         
         <a class="contacts-footer-logo" href="./index.html">
-            WebStudio
+          <span class="contacts-footer-logo">Web</span><span class="contacts-footer-studio">Studio</span></a>
         </a>
         <address>
           <ul class="contacts-list-bottom">
             <li class="contacts-list_item">
               <a
-                class="contacts-list-bottom"
+                class="contacts-list_item-link"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
+                >
+                    м. Київ, пр-т Лесі Українки, 26
+                </a
               >
             </li>
             <li class="contacts-list_item">
-                <a class="contacts-list_item-link" href="mailto:info@devstudio.com">info@example.com</a>
+                <a class="contacts-list_item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="contacts-list_item">
                 <a class="contacts-list_item-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
