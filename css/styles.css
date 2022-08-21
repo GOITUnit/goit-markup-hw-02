@@ -65,7 +65,7 @@ list-style: none;
 }
 
 .hero {
-
+    background-color: #2F303A;
 }
 
 .hero-title {
@@ -81,9 +81,7 @@ list-style: none;
     text-transform: uppercase;
     
     color: #FFFFFF;
-    background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
+
 }
 
 .hero-link {
@@ -184,7 +182,7 @@ list-style: none;
 }
 
 .workers-list_item {
-
+background-color: #fff;
 }
 
 .workers-list_item-title {
@@ -235,7 +233,7 @@ background-color: #2F303A;
 }
 
 .contacts-footer-studio{
-    color: #000000;
+    color: #fff;
 }
 
 .contacts-list-bottom {
@@ -336,17 +334,26 @@ background-color: #2F303A;
 }
 
 .contacts-footer-studio{
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .contacts-list-bottom {
 
 }
 .contacts-list_item {
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    
 }
 .contacts-list_item-link {
-
+color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
