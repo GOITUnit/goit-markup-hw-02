@@ -383,15 +383,32 @@ margin: -1px;
 }
 
 .portfolio-list_item:hover {
-
+   
 }
 
 .portfolio-list_item{
-  
+ 
 }
 
 .portfolio-list-button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    
+background: #2196F3;
+/* shadow-middle */
 
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+    
 }
 
 
@@ -404,15 +421,36 @@ margin: -1px;
 }
 
 .projects-list_item {
-
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 
 .projects-list_title {
-    
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
+
+color: #212121;
+
 }
 
 .projects-list_paragraph {
-   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    
 }
 
 .active {
