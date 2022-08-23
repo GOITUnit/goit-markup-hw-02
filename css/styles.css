@@ -1,4 +1,13 @@
 /* <<<<<<< HEAD */
+:root{
+    --white: #FFFFFF;
+    --hard-white:#EEEEEE;
+    --blue: #2196F3;
+    --black: #212121;
+    --gray: #757575;
+    --hard-gray:#2F303A;
+    --light-gray:#F5F4FA;
+  }
 
 a{
     text-decoration:none;
@@ -18,14 +27,17 @@ list-style: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    /* identical to box height */
+    
     letter-spacing: 0.03em;
-
-}
-.nav-logo-web{
+    
     color: #2196F3;
 }
+.nav-logo-web{
+    
+}
 .nav-logo-studio{
-    color: #000000;
+    color:var(--black)
 }
 
 .nav-list {
@@ -37,11 +49,28 @@ list-style: none;
 }
 
 .nav-link:hover {
- color:#2196F3;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #2196F3;
+    
 }
 
 .nav-link {
-   color: #000000; 
+    ont-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contacts {
@@ -53,19 +82,35 @@ list-style: none;
 }
 
 .contacts-list-item {
-    color: #757575;
+    
 }
 
 .contacts-list_item-link {
-    color:inherit
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: #757575;
+
 }
 
 .contacts-list_item-link:hover {
-    color:#2196F3
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #2196F3;
+     
 }
 
 .hero {
-    background-color: #2F303A;
+    background: #2F303A;
 }
 
 .hero-title {
@@ -81,17 +126,30 @@ list-style: none;
     text-transform: uppercase;
     
     color: #FFFFFF;
-
 }
 
 .hero-button{
-    
+    background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+
 }
 
 .hero-link {
-    background: #2196F3;
-    padding: 10px 32px;
-    color:#FFFFFF;
+ 
 }
 
 .about {
@@ -99,8 +157,18 @@ list-style: none;
 }
 
 .about-title {
-
-}
+    visibility: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+      } 
 
 .about-list {
 
@@ -112,29 +180,28 @@ list-style: none;
 
 .about-list_item-title {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #212121;
-    
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #212121;
+
 }
 
 .about-list_item-paragraph {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: #757575;
-    
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575;
 }
 
 .gallery {
@@ -143,15 +210,15 @@ list-style: none;
 
 .gallery-title {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    color: #212121;
-    
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+letter-spacing: 0.03em;
+
+color: #212121;
+
 }
 
 .gallery-list {
@@ -163,22 +230,20 @@ list-style: none;
 }
 
 .workers {
-    
-    
     background: #F5F4FA;
 }
 
 .workers-title {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    
-    letter-spacing: 0.03em;
-    
-    color: #212121;
-    
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+
+letter-spacing: 0.03em;
+
+color: #212121;
+
 }
 
 .workers-list {
@@ -186,7 +251,11 @@ list-style: none;
 }
 
 .workers-list_item {
-background-color: #fff;
+    background: #FFFFFF;
+    /* material shadow v1 */
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .workers-list_item-title {
@@ -197,26 +266,26 @@ background-color: #fff;
     line-height: 19px;
     /* identical to box height */
     
-    
+
     letter-spacing: 0.03em;
     
     color: #212121;
-    
+     
 }
 
 .workers-list_item-paragraph {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    
-   
-    letter-spacing: 0.03em;
-    
-    color: #757575;
-    
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+letter-spacing: 0.03em;
+
+color: #757575;
+
 }
 
 .contacts {
@@ -224,7 +293,7 @@ background-color: #fff;
 }
 
 .contacts-footer {
-background-color: #2F303A;
+    background: #2F303A;
 }
 
 .contacts-footer-logo {
@@ -233,11 +302,26 @@ background-color: #2F303A;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
     color: #2196F3;
+    
 }
 
 .contacts-footer-studio{
-    color: #fff;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    
 }
 
 .contacts-list-bottom {
@@ -246,15 +330,25 @@ background-color: #2F303A;
 
 .contacts-list_item {
 
+    
+}
+
+.contacts-list_item-link-street{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+
 }
 
 .contacts-list_item-link:hover {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color:#2196F3
+ 
 }
 
 .portfolio {
@@ -262,7 +356,26 @@ background-color: #2F303A;
 }
 
 .portfolio-title {
-
+visibility: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px; position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 
 .portfolio-list {
@@ -270,32 +383,14 @@ background-color: #2F303A;
 }
 
 .portfolio-list_item:hover {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
-    
-    letter-spacing: 0.03em;
 
-    color:#2196F3
 }
 
 .portfolio-list_item{
-    color: #212121
+  
 }
 
 .portfolio-list-button{
-    background: #2196F3;
-/* shadow-middle */
-
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #FFFFFF;
 
 }
 
@@ -313,31 +408,11 @@ color: #FFFFFF;
 }
 
 .projects-list_title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
-    
-    letter-spacing: 0.06em;
-    
-    color: #212121;
     
 }
 
 .projects-list_paragraph {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    
-    letter-spacing: 0.03em;
-    
-    color: #757575;
-    
+   
 }
 
 .active {
@@ -345,10 +420,10 @@ color: #FFFFFF;
 }
 
 .contacts-footer {
-    background-color: #2F303A;
+
 }
 .contacts-footer-logo {
-    color: #2196F3;
+    
 }
 
 .contacts-footer-studio{
@@ -359,19 +434,10 @@ color: #FFFFFF;
 
 }
 .contacts-list_item {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    
+ 
 }
 .contacts-list_item-link { 
-    color:#FFFFFF99;
+    
 }
 
 /*# sourceMappingURL=style.css.map */
