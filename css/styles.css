@@ -61,7 +61,7 @@ list-style: none;
 }
 
 .nav-link {
-    ont-family: 'Roboto';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -148,8 +148,9 @@ color: #FFFFFF;
 border: 0;
 }
 
-.hero-link {
- 
+.hero-button:hover,
+.hero-button:focus {
+   color: #188CE8;
 }
 
 .about {
@@ -411,6 +412,10 @@ border-radius: 4px;
     
 }
 
+.portfolio-list-button:hover,
+.portfolio-list-button:focus{
+    color: #188CE8;
+}
 
 .projects {
 
