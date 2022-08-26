@@ -118,6 +118,7 @@ body .list {
     text-align: center;
 }
 
+
 .list-nav {
     display: flex;
     margin-left: 93px;
@@ -134,7 +135,9 @@ body .list {
 .list-auth {
     display: flex;
     margin-left: auto;
+    margin-top: 32px;
 }
+
 
 .list-auth .item:not(:last-child) {
     margin-right: 50px;
@@ -389,7 +392,7 @@ body .list {
     line-height: 1.6;
     letter-spacing: var(--portfolio-primary-letter-spacing);
     cursor: pointer;
-    background-color: var(--primary-bgc);
+    background-color: var(--secondary-bgc #F5F4FA);
 
     min-width: 125px;
     height: 38px;

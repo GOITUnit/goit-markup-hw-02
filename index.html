@@ -7,41 +7,48 @@
     <meta name="description" content="The best WebStudio" />
     <title class="title">WebStudio</title>
     <!--Font styles-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<!--Modern normalize-->
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Modern normalize-->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <!--Custom styles-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
+      <div class="container nav-position">
       <nav class="nav">
         <!-- nav-link-active  => nav-logo -->
         <a class="logo" href="./index.html"><span>Web</span>Studio</a>
         <ul class="list-nav list">
-            <!-- активный линк как в макете -->
+          <!-- активный линк как в макете -->
           <li class="item">
             <a class="link active-page" href="#">Студія</a>
-        </li>
+          </li>
           <li class="item">
             <a class="link" href="./portfolio.html">Портфоліо</a>
-        </li>
+          </li>
           <li class="item">
             <a class="link" href="#">Контакти</a>
-        </li>
+          </li>
         </ul>
       </nav>
 
       <ul class="list-auth list">
         <li class="item">
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
         <li class="item">
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
     </header>
     <main>
       <!--Замовлення послуг-->
@@ -51,6 +58,7 @@
       </section>
       <!--Особливості-->
       <section class="section">
+        <div class="container features">
         <h2 class="section-title visually-hidden">Наші особливості</h2>
         <ul class="features-list list">
           <li class="item">
@@ -81,13 +89,16 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!--Надання послуг-->
       <section class="section work">
+        <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="work-list list">
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./imgwork/img-1.jpg"
               alt="Розробка продукту"
               width="370"
@@ -95,7 +106,8 @@
             />
           </li>
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./imgwork/img-2.jpg"
               alt="Розробка Інтерфейсу"
               width="370"
@@ -103,7 +115,8 @@
             />
           </li>
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./imgwork/img-3.jpg"
               alt="Стилизація"
               width="370"
@@ -111,13 +124,16 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!--Співробітники-->
       <section class="section team">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./ourteam/img-1.jpg"
               alt="Співробітник"
               width="270"
@@ -127,7 +143,8 @@
             <p class="text">Product Designer</p>
           </li>
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./ourteam/img-2.jpg"
               alt="Співробітник"
               width="270"
@@ -137,7 +154,8 @@
             <p class="text">Frontend Developer</p>
           </li>
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./ourteam/img-3.jpg"
               alt="Співробітник"
               width="270"
@@ -147,7 +165,8 @@
             <p class="text">Marketing</p>
           </li>
           <li class="item">
-            <img class="img"
+            <img
+              class="img"
               src="./ourteam/img-4.jpg"
               alt="Співробітник"
               width="270"
@@ -157,28 +176,37 @@
             <p class="text">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
       <!--Контактні данні-->
-      
+
       <footer class="footer">
-        
-        <a class="logo logo-footer link" href="./index.html"><span>Web</span>Studio</a>
+        <div class="container">
+        <a class="logo logo-footer link" href="./index.html"
+          ><span>Web</span>Studio</a
+        >
         <address class="address">
           <ul class="address-list list">
             <li class="item">
-              <a class="link link-address" 
-                        href="https://goo.gl/maps/GNWSCM9yFP9jynwZ7" 
-                        target="_blank" 
-                        rel="noopener noreferrel">м. Київ, пр-т Лесі Українки, 26</a>
+              <a
+                class="link link-address"
+                href="https://goo.gl/maps/GNWSCM9yFP9jynwZ7"
+                target="_blank"
+                rel="noopener noreferrel"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
             </li>
             <li class="item">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
+      </div>
       </footer>
     </main>
   </body>
